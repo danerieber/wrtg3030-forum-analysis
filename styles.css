@@ -1,0 +1,36 @@
+#root-container {
+    max-width: 1000px;
+}
+.text-purple {
+    color: #df78ef;
+}
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+body {
+    background-color: #102027;
+}
+figure {
+    border-left: 3px solid gray;
+    padding-left: 20px;
+}
+.bg-dark {
+    background-color: #29434e !important;
+}
+.text-bbc {
+    color: #f44336;
+}
+.text-osf {
+    color: #2196f3;
+}
+.text-title {
+    color: #c1d5e0;
+}
+.text-muted,
+.blockquote-footer,
+.link-secondary {
+    color: #999 !important;
+}

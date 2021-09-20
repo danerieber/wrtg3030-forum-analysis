@@ -1,27 +1,489 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <!-- Optional JavaScript; choose one of the two! -->
+	<link href="styles.css" rel="stylesheet">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<title>Rieber WRTG 3030 Forum Analysis</title>
+</head>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    -->
-  </body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100" tabindex="0">
+	<nav id="navbar-main" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand d-lg-none" href="#">Forum Analysis</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#background">Background</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#articles">Articles</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#forums">Forums</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#a-closer-look">A Closer Look</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#audience">Audience</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#structure">Structure</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="root-container" class="container">
+		<div class="p-5 mb-4">
+			<div class="row py-5 justify-content-center">
+				<div id="jumbotron" class="col-md-8 text-title">
+					<h1 class="display-5 fw-bold">Forum Analysis</h1>
+					<p class="lead fs-4">
+						An examination of the different lenses through which public discourse and scientific research
+						approach a contemporary issue
+					</p>
+					<p>
+						by Dane Rieber
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" id="background"></a>
+		<h2 class="text-center text-title">Background</h2>
+
+		<div class="row mb-5 justify-content-center">
+			<div class="col-md-8">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<p class="card-text">
+							UK schools were closed due to COVID-19, so standardized tests like the GCSE<sup>1</sup>
+							could not be held according to Ofqual’s<sup>2</sup> decision.<br>
+							<br>
+							Ofqual used a method in which teachers gave estimated grades for each student for each
+							subject. Teachers also provided rankings relative to other students with the same grade.
+							These metrics were then processed by an algorithm that took into account each school’s
+							historical performance and adjusted the grades accordingly.<br>
+							<br>
+							Their goal was to make each school’s performance match with the results from previous
+							years.<br>
+							<br>
+							<span class="text-muted">
+								<small><sup>1</sup> The General Certificate of Secondary Education</small><br>
+								<small><sup>2</sup> The Office of Qualifications and Examinations Regulation</small>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" id="articles"></a>
+		<h2 class="text-center text-title">Articles</h2>
+
+		<div class="row mb-5">
+			<div class="card-group">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-bbc text-center">Popular Article <small class="text-muted">from the
+								BBC</small></h5>
+						<hr>
+						<p class="card-text">
+							The BBC’s article briefly describes the situation and then presents data showing that a
+							significant percentage of student’s grades were lower than their teachers’ estimates. They
+							also outline how this system benefitted private schools, since their history of higher
+							performance meant that their students’ grades were not lowered to the same degree as public
+							schools. This evidently fails high-performing students at low-performing schools, whose
+							grades would likely be more accurate within the context of all UK students rather than just
+							one school.<br>
+							<br>
+							The article wraps up by covering the government’s reversal of the decision. Finally, it
+							presents a potential new problem of “grade inflation” due to the teacher-assigned grades
+							flying above school averages. They predict that there may now be a strain on universities
+							with the influx of students who can qualify for their programs.
+						</p>
+						<a href="https://www.bbc.com/news/explainers-53807730" class="card-link link-danger">Read
+							Here</a>
+					</div>
+				</div>
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-osf text-center">Scholarly Article <small class="text-muted">from the
+								OSF</small></h5>
+						<hr>
+						<p class="card-text">
+							The scholarly article focused its attention on surveying affected students to gather their
+							opinions on the fairness of exam cancellations and calculated grades. After providing
+							background information, the paper explores student sentiments, taking into account patterns
+							with demographics as well. Their findings showed that students were concerned for their
+							future and their mental health, worrying about the potential impacts of being the “COVID-19
+							generation” -- specifically what their unique grades will mean for their chances of college
+							acceptance and employment.<br>
+							<br>
+							It seemed that many students attributed the unfairness to structural inequalities in the
+							UK’s education system, expressing concern over racism and classism playing a significant
+							role. Since the system relied on the opinion of teachers, students worried about personal
+							biases finding their way into the results.
+						</p>
+						<a href="https://osf.io/j2nqb/download" class="card-link link-primary">Download PDF Here</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" id="forums"></a>
+		<h2 class="text-center text-title">Forums</h2>
+
+		<div class="row">
+			<div class="card-group">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-bbc text-center">BBC</h5>
+						<hr>
+						<figure>
+							<blockquote class="blockquote">
+								<p class="lead fs-6">We’re impartial and independent, and every day we create distinctive, world-class
+									programmes and content which inform, educate and entertain millions of people in
+									the UK and
+									around the world.</p>
+							</blockquote>
+							<figcaption class="blockquote-footer">
+								British Broadcasting Corporation <a href="https://www.bbc.co.uk/aboutthebbc"
+									class="link-secondary">website</a>
+							</figcaption>
+						</figure>
+						<p class="card-text">
+							The BBC’s self-description encapsulates what people ultimately expect from a large,
+							responsible news outlet. While “impartial and independent” may be nearly impossible to
+							enforce uniformly throughout their organization, their inclusion of their purpose to
+							“entertain” may serve as a testament to their transparency -- it is not in their interest to
+							hide such motives from the reader. Even though entertainment can sometimes extend to
+							exaggeration of the truth, the BBC nevertheless acknowledges entertainment’s importance in
+							the media landscape today.<br>
+							<br>
+							Arguably, the juxtaposition of entertainment and education in their description may indicate
+							an implied mission: discovering the optimal balance between the two. Neglecting to include
+							this detail could suggest either an education-only focus (uncommon in mainstream media) or a
+							dishonest attempt from the outlet to ignore the realities of their reporting. All
+							implications and intentions aside, the BBC’s synopsis is brief and apt.
+						</p>
+					</div>
+				</div>
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-osf text-center">OSF</h5>
+						<hr>
+						<figure>
+							<blockquote class="blockquote">
+								<p class="lead fs-6">OSF is a free, open platform to support your research and enable collaboration.</p>
+							</blockquote>
+							<figcaption class="blockquote-footer">
+								Open Science Framework <a href="https://osf.io/"
+											class="link-secondary">website</a>
+							</figcaption>
+						</figure>
+						<figure>
+							<blockquote class="blockquote">
+								<p class="lead fs-6">Our mission is to increase openness, integrity, and reproducibility of research.</p>
+							</blockquote>
+							<figcaption class="blockquote-footer">
+								Center for Open Science <a href="https://www.cos.io/about/mission"
+											class="link-secondary">website</a>
+							</figcaption>
+						</figure>
+						<p class="card-text">
+							The Open Science Framework is a product of COS (Center for Open Science). COS is very vague
+							with their descriptions which are, in reality, more of mission statements
+							instead. The goals outlined in the statements speak to the nature of the content that one
+							would expect to find on their platform: open, collaborative, yet diligent research.<br>
+							<br>
+							It seems that openness and integrity may be counterintuitive, specifically for the
+							scientific community. The means of discourse and publication within science are typically
+							reserved for those that prove themselves qualified enough to engage in its language and
+							methodology. This usually has the side effect that only properly conducted studies make
+							their way into the spotlight. It can be argued, though, that COS’s emphasis on collaboration
+							-- treating each project not as owned by the author but as owned by the community -- can
+							remediate the faults of open publication, since the reliability of the research is
+							everyone’s responsibility. In addition, opening scientific publication to the public should
+							not decrease the competitiveness of top scientists who are attuned to the scholarly
+							discourse, and it should rather draw attention to the quality of their work in reference to
+							other, less disciplined public work.<br>
+							<br>
+							Whether or not OSF’s openness actually fosters integrity, perhaps papers from their website
+							should be approached with diligence and skepticism regardless.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-5 justify-content-center">
+			<div class="col-md-8">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-purple text-center">Comparison</h5>
+						<hr>
+						<p class="card-text">
+							To compare the two forums, consider publishing a work originally from one forum to the other
+							forum -- how successful would it be? Would a reader of the BBC care about, or even
+							understand, a painfully thorough rundown of every finding leading to the scientific
+							conclusions they’re interested in? Would a reader of OSF papers want more information to
+							substantiate the claims made in news articles?<br>
+							<br>
+							A news article published to COS would likely be skipped by the majority of readers, as news
+							articles are typically just a composite of existing facts or findings that fail to provide
+							new information. The only exception to this is current events in which the news provides the
+							information. In research, current events are typically studied in reference to a collection
+							of similar events rather than just the most recent event itself, so these articles would
+							still likely be irrelevant on OSF. Scientific publications do not exist to grab your
+							attention, so entertainment and public reception is not of concern to readers or
+							writers.<br>
+							<br>
+							Likewise, a study on OSF wouldn’t see much love on the BBC. Most people probably find the
+							biggest barrier for reading such a paper is the time commitment. In fact, this very analysis
+							is much longer than the BBC’s article itself, because this is not a summary of existing
+							analysis, but the actual analysis itself. Running through reasoning takes more effort than
+							people are willing to tackle.<br>
+							<br>
+							That is not to say that lack of reasoning is a bad thing. If you were to grab an atlas of
+							your city, find the nearest McDonald’s, chart all major roads in its proximity, obtain data
+							on traffic conditions and speed limits, gather information about the weather forecast, and
+							finally conduct a case study on the timing of the traffic lights and the methods needed to
+							avoid stops, then you could undoubtedly find the fastest possible method in which to reach
+							the nearest McDonald’s. Or, you could trust that Google Maps has done all of that already
+							and even done it well enough to get you there very quickly, and you can happily enjoy your
+							FDA-approved Big Mac -- that is unless you would rather study its safety for human
+							consumption yourself.<br>
+							<br>
+							Google Maps and the FDA not only prove themselves trustworthy as
+							authorities, but also prove themselves as authorities due to their record of
+							trustworthiness. It is with an almost insane (yet commendable) distrust of authority that a
+							reader of the BBC would require a totality of reasoning and evidence rather than trust the
+							source as an authority on accurate information reporting. This is why consumers of
+							mainstream media don’t care about science unless they want to, and if they want to, they are
+							keen to get more information elsewhere (such as Neil deGrass Tyson’s
+							Twitter<sup>1</sup>).<br>
+							<br>
+							<span class="text-muted">
+								<small><sup>1</sup> This is sarcasm</small><br>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" id="a-closer-look"></a>
+		<h2 class="text-center text-title">A Closer Look</h2>
+		<h5 class="text-center text-secondary">at the articles' introductions</h5>
+
+		<div class="row">
+			<div class="card-group">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-bbc text-center">BBC</h5>
+						<hr>
+						<p class="card-text">
+							The BBC’s intro is brief and straightforward, immediately establishing their topic as
+							Ofqual’s reversal of their decision to algorithmically adjust student’s grades. The BBC also
+							notes that this followed from an “uproar,” grabbing readers’ attention to a conflict that
+							may be of interest to them (or already has been of interest to them). Two sentences is all
+							that the BBC needs for their hook -- a dramatic event of national importance that involves
+							children’s well-being and the mysterious inner-workings of new technology. It’s likely that
+							they kept the intro brief under the reasonable assumption that many readers would be
+							invested in the situation already.
+						</p>
+					</div>
+				</div>
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-osf text-center">OSF</h5>
+						<hr>
+						<p class="card-text">
+							The scholarly article’s introduction first covers basic background information and the
+							extenuating circumstances leading to Ofqual’s controversial decision. Then, identifying its
+							three main topics in a numbered list, the paper is said to explore the impact and fairness
+							of the grading algorithm along with an evaluation of the support systems available for
+							affected students. The introduction also emphasizes the gravity of the situation, stating
+							the importance of A-level grades and their weight over the direction of a young student’s
+							life.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-5 justify-content-center">
+			<div class="col-md-8">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-purple text-center">Comparison</h5>
+						<hr>
+						<p class="card-text">
+							The most glaring difference between the two articles’ introductions is how they introduce
+							the grading algorithm. The BBC sees no need for background information behind the decision,
+							instead introducing it as a failed plan tainted by public outcry. The scholarly article,
+							however, identifies the unprecedented challenges that arose from COVID-19 as a precursor to
+							multiple tough decisions that administrators encountered much difficulty trying to solve.
+							The scholarly paper seems to regard the algorithm more as an <em>attempt</em> rather than as
+							a
+							<em>failure</em>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" id="audience"></a>
+		<h2 class="text-center text-title">Audience</h2>
+
+		<div class="row">
+			<div class="card-group">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-bbc text-center">BBC</h5>
+						<hr>
+						<p class="card-text">
+							The BBC is a massive news outlet that reaches an audience consisting of all types of people
+							with varying areas of expertise. As with any popular news outlet, their articles are written
+							and published with the intent to be highly accessible, therefore requiring no significant
+							expertise from the reader and no significant investment of the reader’s time. In addition,
+							it is in the BBC’s best interest to captivate readers and increase their chances of
+							establishing themselves as the reader’s primary news outlet.<br>
+							<br>
+							In short, their articles are brief, simple, and likely to be entertaining. It’s important to
+							note that this was published as an “explainer” article, a special type of article that
+							answers common questions about current events.
+
+						</p>
+					</div>
+				</div>
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-osf text-center">OSF</h5>
+						<hr>
+						<p class="card-text">
+							This paper was published through OSF (Open Science Framework), a product of COS (Center for
+							Open Science). COS intends to streamline research publication and increase the accessibility
+							to scientific work for both readers and writers.<br>
+							<br>
+							Often in academia, scientific journals require an institutional account or even payment to
+							access them -- and for writers, they require connections with publishers or professionals.
+							By publishing this article using OSF, the author can avoid such barriers and increase access
+							to their work. This is not to say, however, that the article is intended for the general
+							public, as OSF clearly establishes itself as a product for the scientific community.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-5 justify-content-center">
+			<div class="col-md-8">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-purple text-center">Comparison</h5>
+						<hr>
+						<p class="card-text">
+							While both publishers emphasize openness and accessibility, it’s important to make the
+							distinction between the general public and the scientific community. The scholarly paper is
+							still decorated appropriately with the sophisticated language from the halls of academia,
+							but it also takes care not to restrict its content to the niche understanding of field
+							experts. To provide some comparison, the scholarly article is readable by all scholars
+							rather than only statisticians or administrators in education, and the news article is
+							readable by all people rather than only academics. Nevertheless, the difference in the
+							articles’ target audience bleeds into their writing -- obvious even by taking a mere glance
+							at the structure of the two articles.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="anchor" id="structure"></a>
+		<h2 class="text-center text-title">Structure</h2>
+
+		<div class="row">
+			<div class="card-group">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-bbc text-center">BBC</h5>
+						<hr>
+						<p class="card-text">
+							As with most news articles, the length of the content decreases to about half by removing
+							advertisements, pictures, and graphs. However, uncharacteristic to most news, the BBC’s
+							article is fairly information-rich. Bulleted lists, statistics, definitions, graphs, and
+							analysis all find their way into the article. This is most likely a consequence of being
+							written as a BBC explainer article, of whose focus lies more on providing frequently
+							requested information.
+						</p>
+					</div>
+				</div>
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-osf text-center">OSF</h5>
+						<hr>
+						<p class="card-text">
+							Nearly a ten-page report, rich with statistics and information, this read is not really
+							suited for a bathroom break at work (especially if you work at Amazon). This paper is
+							thorough and informative, aiming to draw conclusions from relevant empirical evidence and
+							sufficient background information. Because of this, the paper is quite lengthy and dense,
+							and may need multiple passes for its ideas to become fully saturated within the reader’s
+							mind.<br>
+							<br>
+							Overall, it follows the expected structure of a scientific paper, divided into the expected
+							sections and littered with citations. One interesting thing to note is the absence of
+							graphs. Perhaps the author saw it unnecessary, as most of their statistics were simply
+							compiled into bulleted lists.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-5 justify-content-center">
+			<div class="col-md-8">
+				<div class="card p-3 border-0 my-2 text-light bg-dark">
+					<div class="card-body">
+						<h5 class="card-title text-purple text-center">Comparison</h5>
+						<hr>
+						<p class="card-text">
+							The scientific paper’s absence of graphs may be concerning for some. In fact, there are
+							places where bar graphs could quite easily be created and would make the statistics more
+							presentable. While this may seem uncharacteristic of a scholarly paper, this particular
+							paper actually puts an emphasis on its qualitative data, specifically the interviews with
+							affected students. This seems odd: the BBC focuses more on numbers than scholars studying
+							the situation. Perhaps the scholars wanted to take a new approach that doesn’t rely on
+							numerical evidence or mathematics -- which would be quite appropriate considering that
+							numbers had just failed UK students with their newly calculated grades.<br>
+							<br>
+							The BBC article set out to prove that the system malfunctioned, producing the wrong result
+							and therefore resulting in a systematic unfairness. The scholarly article set out to prove
+							something even stronger -- that is, that the lives of the students themselves were not
+							<em>actually</em> improved by the algorithm (at least from the perspective of the students).
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
