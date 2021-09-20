@@ -20,11 +20,13 @@ figure {
 .bg-dark {
     background-color: #29434e !important;
 }
-.text-bbc {
-    color: #f44336;
+.text-bbc,
+.link-danger {
+    color: #ff6659;
 }
-.text-osf {
-    color: #2196f3;
+.text-osf,
+.link-primary {
+    color: #6ab7ff;
 }
 .text-title {
     color: #c1d5e0;
